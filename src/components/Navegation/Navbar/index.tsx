@@ -4,7 +4,7 @@ import Logo from "./Logo";
 import LogoImg from "@public/images/Logo.webp";
 import Link from "next/link";
 
-function Navbar({ linksNav, buttonNav }) {
+function Navbar({ linksNav, buttonNav }: any) {
   return (
     <div className="navbar bg-base-100 flex justify-between w-full ">
       <Logo
@@ -24,8 +24,8 @@ function Navbar({ linksNav, buttonNav }) {
   );
 }
 
-function getItemsNav(linksNav) {
-  return linksNav.map((link) => {
+function getItemsNav(linksNav: any) {
+  return linksNav.map((link: any) => {
     if (link.sub.length == 0) {
       return (
         <li key={link.link}>
@@ -38,7 +38,7 @@ function getItemsNav(linksNav) {
           <details>
             <summary>{link.name}</summary>
             <ul className="bg-primary mt-2 p-2 border-white border ">
-              {link.sub.map((subLink) => {
+              {link.sub.map((subLink: any) => {
                 return (
                   <li key={`sublink${subLink.name}`}>
                     <Link href={subLink.link}>{subLink.name}</Link>

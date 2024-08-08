@@ -5,7 +5,7 @@ import { KoHo } from "next/font/google";
 import Image from "next/image";
 const koho = KoHo({ subsets: ["latin"], weight: "600" });
 
-export default function Footer({ company, pages, contactInfo, creator }) {
+export default function Footer({ company, pages, contactInfo, creator }: any) {
   const year = new Date().getFullYear();
 
   return (
@@ -21,7 +21,7 @@ export default function Footer({ company, pages, contactInfo, creator }) {
         </aside>
         <nav>
           <header className="footer-title">Paginas</header>
-          {pages.map((page) => {
+          {pages.map((page: any) => {
             return (
               <Link
                 key={"footer-link-" + page.name}

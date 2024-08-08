@@ -3,7 +3,7 @@ import React, { ReactNode } from "react";
 import Title from "../Title";
 import { motion } from "framer-motion";
 
-function Section({ reverse, title, children, headerLevel }) {
+function Section({ reverse, title, children, headerLevel }: any) {
   const xInit = !reverse ? -48 : 40;
   return (
     <motion.section

@@ -1,4 +1,4 @@
-function Title({ title, headerLevel, invert }) {
+function Title({ title, headerLevel, invert }: any) {
   const CLASS_TITLE = "text-primary text-[32px] md:text-[64px]";
   let classTitle = `${CLASS_TITLE} ${invert == "ignore" ? "" : invert == "no" ? " hidden md:flex" : "md:hidden"}`;
 
