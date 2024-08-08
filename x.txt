@@ -1,0 +1,19 @@
+● mpd.service - Music Player Daemon
+     Loaded: loaded (/usr/lib/systemd/user/mpd.service; enabled; preset: enabled)
+     Active: active (running) since Wed 2024-08-07 20:33:33 -03; 4min 10s ago
+ Invocation: bb8b8dcb9d6e4a67b9e3b421bf523d4b
+       Docs: man:mpd(1)
+             man:mpd.conf(5)
+   Main PID: 47891 (mpd)
+      Tasks: 3 (limit: 21364)
+     Memory: 17.7M (peak: 18.6M)
+        CPU: 84ms
+     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/mpd.service
+             └─47891 /usr/bin/mpd --systemd
+
+ago 07 20:33:32 giovani-note systemd[856]: Starting Music Player Daemon...
+ago 07 20:33:33 giovani-note mpd[47891]: server_socket: bind to '0.0.0.0:6600' failed (continuing anyway, because binding to '[::]:6600' succeeded): Failed to bind socket: Address already in use
+ago 07 20:33:33 giovani-note mpd[47891]: decoder: Decoder plugin 'wildmidi' is unavailable: configuration file does not exist: /etc/timidity/timidity.cfg
+ago 07 20:33:33 giovani-note systemd[856]: Started Music Player Daemon.
+ago 07 20:34:01 giovani-note mpd[47891]: client: [2] malformed command "GET / HTTP/1.1"
+ago 07 20:34:01 giovani-note mpd[47891]: client: [3] malformed command "GET /favicon.ico HTTP/1.1"
